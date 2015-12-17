@@ -72,12 +72,12 @@ def main():
 			'''
 	
 	parser = argparse.ArgumentParser(description='--- El Migue dice ---',
-									 formatter_class=argparse.RawDescriptionHelpFormatter,
-									 epilog=textwrap.dedent(epilogmsj))
+                                         formatter_class=argparse.RawDescriptionHelpFormatter,
+					 epilog=textwrap.dedent(epilogmsj))
 	
 	parser.add_argument('-i', type=_checkear_texto,
-		                      help='''Texto de entrada. 
-		                              ie. program.py -i "Hola mundo''')
+                                  help='''Texto de entrada. 
+		                          ie. program.py -i "Hola mundo''')
 	args = parser.parse_args()
 	texto = args.i
 	dibujar_texto(texto)
